@@ -1,0 +1,32 @@
+{
+  "jhipsterApp": {
+    "company": {
+      "home": {
+        "title": "Companies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "建立一筆新的 Company",
+        "createOrEditLabel": "建立或編輯 Company",
+        "notFound": "No Companies found"
+      },
+      "created": "新的 Company 建立成功，識別碼為 { param }",
+      "updated": "識別碼為 { param } 的 Company 更新成功",
+      "deleted": "識別碼為 { param } 的 Company 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Company { id } 嗎?"
+      },
+      "detail": {
+        "title": "Company"
+      },
+      "id": "ID",
+      "companyNo": "Company No",
+      "enName": "En Name",
+      "chName": "Ch Name",
+      "tel": "Tel",
+      "addr": "Addr",
+      "email": "Email",
+      "peopleName": "People Name",
+      "cerfCompany": "Cerf Company",
+      "feeProdCerfCompany": "Fee Prod Cerf Company"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "jhipsterApp": {
+    "feeProdCerfCompany": {
+      "home": {
+        "title": "Fee Prod Cerf Companies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Fee Prod Cerf Company",
+        "createOrEditLabel": "Create or edit a Fee Prod Cerf Company",
+        "notFound": "No Fee Prod Cerf Companies found"
+      },
+      "created": "A new Fee Prod Cerf Company is created with identifier { param }",
+      "updated": "A Fee Prod Cerf Company is updated with identifier { param }",
+      "deleted": "A Fee Prod Cerf Company is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Fee Prod Cerf Company { id }?"
+      },
+      "detail": {
+        "title": "Fee Prod Cerf Company"
+      },
+      "id": "ID",
+      "fee": "Fee",
+      "feeType": "Fee Type",
+      "feeDt": "Fee Dt",
+      "prod": "Prod",
+      "cerf": "Cerf",
+      "company": "Company"
+    }
+  }
+}

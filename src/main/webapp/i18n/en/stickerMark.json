@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "stickerMark": {
+      "home": {
+        "title": "Sticker Marks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sticker Mark",
+        "createOrEditLabel": "Create or edit a Sticker Mark",
+        "notFound": "No Sticker Marks found"
+      },
+      "created": "A new Sticker Mark is created with identifier { param }",
+      "updated": "A Sticker Mark is updated with identifier { param }",
+      "deleted": "A Sticker Mark is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Sticker Mark { id }?"
+      },
+      "detail": {
+        "title": "Sticker Mark"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "sticker": "Sticker",
+      "mark": "Mark"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "cerfProd": {
+      "home": {
+        "title": "Cerf Prods",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cerf Prod",
+        "createOrEditLabel": "Create or edit a Cerf Prod",
+        "notFound": "No Cerf Prods found"
+      },
+      "created": "A new Cerf Prod is created with identifier { param }",
+      "updated": "A Cerf Prod is updated with identifier { param }",
+      "deleted": "A Cerf Prod is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Cerf Prod { id }?"
+      },
+      "detail": {
+        "title": "Cerf Prod"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "cerf": "Cerf",
+      "prod": "Prod"
+    }
+  }
+}

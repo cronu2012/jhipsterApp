@@ -1,0 +1,35 @@
+{
+  "jhipsterApp": {
+    "cerf": {
+      "home": {
+        "title": "Cerfs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "建立一筆新的 Cerf",
+        "createOrEditLabel": "建立或編輯 Cerf",
+        "notFound": "No Cerfs found"
+      },
+      "created": "新的 Cerf 建立成功，識別碼為 { param }",
+      "updated": "識別碼為 { param } 的 Cerf 更新成功",
+      "deleted": "識別碼為 { param } 的 Cerf 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Cerf { id } 嗎?"
+      },
+      "detail": {
+        "title": "Cerf"
+      },
+      "id": "ID",
+      "cerfNo": "Cerf No",
+      "cerfVer": "Cerf Ver",
+      "status": "Status",
+      "pdf": "Pdf",
+      "issuDt": "Issu Dt",
+      "expDt": "Exp Dt",
+      "cerfProd": "Cerf Prod",
+      "cerfStd": "Cerf Std",
+      "cerfMark": "Cerf Mark",
+      "cerfCompany": "Cerf Company",
+      "feeProdCerfCompany": "Fee Prod Cerf Company",
+      "countryCert": "Country Cert"
+    }
+  }
+}

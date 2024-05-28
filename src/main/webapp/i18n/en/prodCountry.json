@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "prodCountry": {
+      "home": {
+        "title": "Prod Countries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Prod Country",
+        "createOrEditLabel": "Create or edit a Prod Country",
+        "notFound": "No Prod Countries found"
+      },
+      "created": "A new Prod Country is created with identifier { param }",
+      "updated": "A Prod Country is updated with identifier { param }",
+      "deleted": "A Prod Country is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Prod Country { id }?"
+      },
+      "detail": {
+        "title": "Prod Country"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "prod": "Prod",
+      "country": "Country"
+    }
+  }
+}

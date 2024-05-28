@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "countryCert": {
+      "home": {
+        "title": "Country Certs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "建立一筆新的 Country Cert",
+        "createOrEditLabel": "建立或編輯 Country Cert",
+        "notFound": "No Country Certs found"
+      },
+      "created": "新的 Country Cert 建立成功，識別碼為 { param }",
+      "updated": "識別碼為 { param } 的 Country Cert 更新成功",
+      "deleted": "識別碼為 { param } 的 Country Cert 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Country Cert { id } 嗎?"
+      },
+      "detail": {
+        "title": "Country Cert"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "country": "Country",
+      "cerf": "Cerf"
+    }
+  }
+}

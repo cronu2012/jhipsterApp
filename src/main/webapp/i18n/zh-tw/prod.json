@@ -1,0 +1,33 @@
+{
+  "jhipsterApp": {
+    "prod": {
+      "home": {
+        "title": "Prods",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "建立一筆新的 Prod",
+        "createOrEditLabel": "建立或編輯 Prod",
+        "notFound": "No Prods found"
+      },
+      "created": "新的 Prod 建立成功，識別碼為 { param }",
+      "updated": "識別碼為 { param } 的 Prod 更新成功",
+      "deleted": "識別碼為 { param } 的 Prod 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Prod { id } 嗎?"
+      },
+      "detail": {
+        "title": "Prod"
+      },
+      "id": "ID",
+      "prodNo": "Prod No",
+      "enName": "En Name",
+      "chName": "Ch Name",
+      "hsCode": "Hs Code",
+      "cccCode": "Ccc Code",
+      "prodCountry": "Prod Country",
+      "prodStd": "Prod Std",
+      "cerfProd": "Cerf Prod",
+      "feeProdCerfCompany": "Fee Prod Cerf Company",
+      "prodSticker": "Prod Sticker"
+    }
+  }
+}

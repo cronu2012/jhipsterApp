@@ -1,0 +1,33 @@
+{
+  "jhipsterApp": {
+    "std": {
+      "home": {
+        "title": "Stds",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Std",
+        "createOrEditLabel": "Create or edit a Std",
+        "notFound": "No Stds found"
+      },
+      "created": "A new Std is created with identifier { param }",
+      "updated": "A Std is updated with identifier { param }",
+      "deleted": "A Std is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Std { id }?"
+      },
+      "detail": {
+        "title": "Std"
+      },
+      "id": "ID",
+      "stdNo": "Std No",
+      "stdVer": "Std Ver",
+      "enName": "En Name",
+      "chName": "Ch Name",
+      "status": "Status",
+      "issuDt": "Issu Dt",
+      "expDt": "Exp Dt",
+      "prodStd": "Prod Std",
+      "cerfStd": "Cerf Std",
+      "countryStd": "Country Std"
+    }
+  }
+}

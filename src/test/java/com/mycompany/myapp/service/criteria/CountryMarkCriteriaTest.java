@@ -1,0 +1,107 @@
+package com.mycompany.myapp.service.criteria;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import org.assertj.core.api.Condition;
+import org.junit.jupiter.api.Test;
+
+class CountryMarkCriteriaTest {
+
+    @Test
+    void newCountryMarkCriteriaHasAllFiltersNullTest() {
+        var countryMarkCriteria = new CountryMarkCriteria();
+        assertThat(countryMarkCriteria).is(criteriaFiltersAre(filter -> filter == null));
+    }
+
+    @Test
+    void countryMarkCriteriaFluentMethodsCreatesFiltersTest() {
+        var countryMarkCriteria = new CountryMarkCriteria();
+
+        setAllFilters(countryMarkCriteria);
+
+        assertThat(countryMarkCriteria).is(criteriaFiltersAre(filter -> filter != null));
+    }
+
+    @Test
+    void countryMarkCriteriaCopyCreatesNullFilterTest() {
+        var countryMarkCriteria = new CountryMarkCriteria();
+        var copy = countryMarkCriteria.copy();
+
+        assertThat(countryMarkCriteria).satisfies(
+            criteria ->
+                assertThat(criteria).is(
+                    copyFiltersAre(copy, (a, b) -> (a == null || a instanceof Boolean) ? a == b : (a != b && a.equals(b)))
+                ),
+            criteria -> assertThat(criteria).isEqualTo(copy),
+            criteria -> assertThat(criteria).hasSameHashCodeAs(copy)
+        );
+
+        assertThat(copy).satisfies(
+            criteria -> assertThat(criteria).is(criteriaFiltersAre(filter -> filter == null)),
+            criteria -> assertThat(criteria).isEqualTo(countryMarkCriteria)
+        );
+    }
+
+    @Test
+    void countryMarkCriteriaCopyDuplicatesEveryExistingFilterTest() {
+        var countryMarkCriteria = new CountryMarkCriteria();
+        setAllFilters(countryMarkCriteria);
+
+        var copy = countryMarkCriteria.copy();
+
+        assertThat(countryMarkCriteria).satisfies(
+            criteria ->
+                assertThat(criteria).is(
+                    copyFiltersAre(copy, (a, b) -> (a == null || a instanceof Boolean) ? a == b : (a != b && a.equals(b)))
+                ),
+            criteria -> assertThat(criteria).isEqualTo(copy),
+            criteria -> assertThat(criteria).hasSameHashCodeAs(copy)
+        );
+
+        assertThat(copy).satisfies(
+            criteria -> assertThat(criteria).is(criteriaFiltersAre(filter -> filter != null)),
+            criteria -> assertThat(criteria).isEqualTo(countryMarkCriteria)
+        );
+    }
+
+    @Test
+    void toStringVerifier() {
+        var countryMarkCriteria = new CountryMarkCriteria();
+
+        assertThat(countryMarkCriteria).hasToString("CountryMarkCriteria{}");
+    }
+
+    private static void setAllFilters(CountryMarkCriteria countryMarkCriteria) {
+        countryMarkCriteria.id();
+        countryMarkCriteria.relType();
+        countryMarkCriteria.countryId();
+        countryMarkCriteria.markId();
+        countryMarkCriteria.distinct();
+    }
+
+    private static Condition<CountryMarkCriteria> criteriaFiltersAre(Function<Object, Boolean> condition) {
+        return new Condition<>(
+            criteria ->
+                condition.apply(criteria.getId()) &&
+                condition.apply(criteria.getRelType()) &&
+                condition.apply(criteria.getCountryId()) &&
+                condition.apply(criteria.getMarkId()) &&
+                condition.apply(criteria.getDistinct()),
+            "every filter matches"
+        );
+    }
+
+    private static Condition<CountryMarkCriteria> copyFiltersAre(CountryMarkCriteria copy, BiFunction<Object, Object, Boolean> condition) {
+        return new Condition<>(
+            criteria ->
+                condition.apply(criteria.getId(), copy.getId()) &&
+                condition.apply(criteria.getRelType(), copy.getRelType()) &&
+                condition.apply(criteria.getCountryId(), copy.getCountryId()) &&
+                condition.apply(criteria.getMarkId(), copy.getMarkId()) &&
+                condition.apply(criteria.getDistinct(), copy.getDistinct()),
+            "every filter matches"
+        );
+    }
+}

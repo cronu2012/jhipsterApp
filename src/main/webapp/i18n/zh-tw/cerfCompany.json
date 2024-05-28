@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "cerfCompany": {
+      "home": {
+        "title": "Cerf Companies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "建立一筆新的 Cerf Company",
+        "createOrEditLabel": "建立或編輯 Cerf Company",
+        "notFound": "No Cerf Companies found"
+      },
+      "created": "新的 Cerf Company 建立成功，識別碼為 { param }",
+      "updated": "識別碼為 { param } 的 Cerf Company 更新成功",
+      "deleted": "識別碼為 { param } 的 Cerf Company 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Cerf Company { id } 嗎?"
+      },
+      "detail": {
+        "title": "Cerf Company"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "cerf": "Cerf",
+      "company": "Company"
+    }
+  }
+}

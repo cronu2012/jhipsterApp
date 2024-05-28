@@ -1,0 +1,35 @@
+{
+  "jhipsterApp": {
+    "cerf": {
+      "home": {
+        "title": "Cerfs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cerf",
+        "createOrEditLabel": "Create or edit a Cerf",
+        "notFound": "No Cerfs found"
+      },
+      "created": "A new Cerf is created with identifier { param }",
+      "updated": "A Cerf is updated with identifier { param }",
+      "deleted": "A Cerf is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Cerf { id }?"
+      },
+      "detail": {
+        "title": "Cerf"
+      },
+      "id": "ID",
+      "cerfNo": "Cerf No",
+      "cerfVer": "Cerf Ver",
+      "status": "Status",
+      "pdf": "Pdf",
+      "issuDt": "Issu Dt",
+      "expDt": "Exp Dt",
+      "cerfProd": "Cerf Prod",
+      "cerfStd": "Cerf Std",
+      "cerfMark": "Cerf Mark",
+      "cerfCompany": "Cerf Company",
+      "feeProdCerfCompany": "Fee Prod Cerf Company",
+      "countryCert": "Country Cert"
+    }
+  }
+}

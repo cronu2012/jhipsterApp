@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "cerfCompany": {
+      "home": {
+        "title": "Cerf Companies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cerf Company",
+        "createOrEditLabel": "Create or edit a Cerf Company",
+        "notFound": "No Cerf Companies found"
+      },
+      "created": "A new Cerf Company is created with identifier { param }",
+      "updated": "A Cerf Company is updated with identifier { param }",
+      "deleted": "A Cerf Company is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Cerf Company { id }?"
+      },
+      "detail": {
+        "title": "Cerf Company"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "cerf": "Cerf",
+      "company": "Company"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "jhipsterApp": {
+    "wcc421View": {
+      "home": {
+        "title": "Wcc 421 Views",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Wcc 421 Views found"
+      },
+      "detail": {
+        "title": "Wcc 421 View"
+      },
+      "id": "ID",
+      "cerfId": "Cerf Id",
+      "countryChName": "Country Ch Name",
+      "cerfNo": "Cerf No",
+      "cerfVer": "Cerf Ver",
+      "cerfStatus": "Cerf Status",
+      "companyChName": "Company Ch Name",
+      "relType": "Rel Type"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "annotations": {
+    "changelogDate": "20240528024643"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "cerfNo",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "30"
+    },
+    {
+      "fieldName": "cerfVer",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "10"
+    },
+    {
+      "fieldName": "pdf",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "issuDt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "expDt",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Cerf",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "cerfProd",
+      "otherEntityRelationshipName": "cerf",
+      "relationshipName": "cerfProd",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cerfStd",
+      "otherEntityRelationshipName": "cerf",
+      "relationshipName": "cerfStd",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cerfMark",
+      "otherEntityRelationshipName": "cerf",
+      "relationshipName": "cerfMark",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cerfCompany",
+      "otherEntityRelationshipName": "cerf",
+      "relationshipName": "cerfCompany",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "feeProdCerfCompany",
+      "otherEntityRelationshipName": "cerf",
+      "relationshipName": "feeProdCerfCompany",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "countryCert",
+      "otherEntityRelationshipName": "cerf",
+      "relationshipName": "countryCert",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,67 @@
+{
+  "annotations": {
+    "changelogDate": "20240528024644"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "stdNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stdVer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "10"
+    },
+    {
+      "fieldName": "issuDt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "expDt",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Std",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "prodStd",
+      "otherEntityRelationshipName": "std",
+      "relationshipName": "prodStd",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cerfStd",
+      "otherEntityRelationshipName": "std",
+      "relationshipName": "cerfStd",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "countryStd",
+      "otherEntityRelationshipName": "std",
+      "relationshipName": "countryStd",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
