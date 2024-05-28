@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "prodStd": {
+      "home": {
+        "title": "Prod Stds",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Prod Std",
+        "createOrEditLabel": "Create or edit a Prod Std",
+        "notFound": "No Prod Stds found"
+      },
+      "created": "A new Prod Std is created with identifier { param }",
+      "updated": "A Prod Std is updated with identifier { param }",
+      "deleted": "A Prod Std is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Prod Std { id }?"
+      },
+      "detail": {
+        "title": "Prod Std"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "prod": "Prod",
+      "std": "Std"
+    }
+  }
+}

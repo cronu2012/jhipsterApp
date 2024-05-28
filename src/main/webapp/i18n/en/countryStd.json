@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "countryStd": {
+      "home": {
+        "title": "Country Stds",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Country Std",
+        "createOrEditLabel": "Create or edit a Country Std",
+        "notFound": "No Country Stds found"
+      },
+      "created": "A new Country Std is created with identifier { param }",
+      "updated": "A Country Std is updated with identifier { param }",
+      "deleted": "A Country Std is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Country Std { id }?"
+      },
+      "detail": {
+        "title": "Country Std"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "country": "Country",
+      "std": "Std"
+    }
+  }
+}

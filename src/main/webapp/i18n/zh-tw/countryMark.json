@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "countryMark": {
+      "home": {
+        "title": "Country Marks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "建立一筆新的 Country Mark",
+        "createOrEditLabel": "建立或編輯 Country Mark",
+        "notFound": "No Country Marks found"
+      },
+      "created": "新的 Country Mark 建立成功，識別碼為 { param }",
+      "updated": "識別碼為 { param } 的 Country Mark 更新成功",
+      "deleted": "識別碼為 { param } 的 Country Mark 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Country Mark { id } 嗎?"
+      },
+      "detail": {
+        "title": "Country Mark"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "country": "Country",
+      "mark": "Mark"
+    }
+  }
+}

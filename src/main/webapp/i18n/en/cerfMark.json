@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "cerfMark": {
+      "home": {
+        "title": "Cerf Marks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cerf Mark",
+        "createOrEditLabel": "Create or edit a Cerf Mark",
+        "notFound": "No Cerf Marks found"
+      },
+      "created": "A new Cerf Mark is created with identifier { param }",
+      "updated": "A Cerf Mark is updated with identifier { param }",
+      "deleted": "A Cerf Mark is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Cerf Mark { id }?"
+      },
+      "detail": {
+        "title": "Cerf Mark"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "cerf": "Cerf",
+      "mark": "Mark"
+    }
+  }
+}

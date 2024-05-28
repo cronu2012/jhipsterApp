@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "cerfStd": {
+      "home": {
+        "title": "Cerf Stds",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "建立一筆新的 Cerf Std",
+        "createOrEditLabel": "建立或編輯 Cerf Std",
+        "notFound": "No Cerf Stds found"
+      },
+      "created": "新的 Cerf Std 建立成功，識別碼為 { param }",
+      "updated": "識別碼為 { param } 的 Cerf Std 更新成功",
+      "deleted": "識別碼為 { param } 的 Cerf Std 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Cerf Std { id } 嗎?"
+      },
+      "detail": {
+        "title": "Cerf Std"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "cerf": "Cerf",
+      "std": "Std"
+    }
+  }
+}

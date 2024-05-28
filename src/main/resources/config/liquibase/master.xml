@@ -11,7 +11,40 @@
     <property name="datetimeType" value="datetime(6)" dbms="mysql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024641_added_entity_Prod.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024642_added_entity_Country.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024643_added_entity_Cerf.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024644_added_entity_Std.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024645_added_entity_Mark.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024646_added_entity_Company.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024647_added_entity_FeeProdCerfCompany.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024648_added_entity_CerfCompany.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024649_added_entity_Sticker.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024650_added_entity_ProdCountry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024651_added_entity_ProdStd.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024652_added_entity_CerfProd.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024653_added_entity_CerfStd.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024654_added_entity_CountryStd.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024655_added_entity_CerfMark.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024656_added_entity_StickerMark.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024657_added_entity_CountryCert.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024658_added_entity_ProdSticker.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024659_added_entity_CountryMark.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024700_added_entity_Wcc412View.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024701_added_entity_Wcc421View.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20240528024647_added_entity_constraints_FeeProdCerfCompany.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024648_added_entity_constraints_CerfCompany.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024650_added_entity_constraints_ProdCountry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024651_added_entity_constraints_ProdStd.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024652_added_entity_constraints_CerfProd.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024653_added_entity_constraints_CerfStd.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024654_added_entity_constraints_CountryStd.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024655_added_entity_constraints_CerfMark.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024656_added_entity_constraints_StickerMark.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024657_added_entity_constraints_CountryCert.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024658_added_entity_constraints_ProdSticker.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240528024659_added_entity_constraints_CountryMark.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

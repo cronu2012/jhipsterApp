@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "countryCert": {
+      "home": {
+        "title": "Country Certs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Country Cert",
+        "createOrEditLabel": "Create or edit a Country Cert",
+        "notFound": "No Country Certs found"
+      },
+      "created": "A new Country Cert is created with identifier { param }",
+      "updated": "A Country Cert is updated with identifier { param }",
+      "deleted": "A Country Cert is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Country Cert { id }?"
+      },
+      "detail": {
+        "title": "Country Cert"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "country": "Country",
+      "cerf": "Cerf"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "prodSticker": {
+      "home": {
+        "title": "Prod Stickers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Prod Sticker",
+        "createOrEditLabel": "Create or edit a Prod Sticker",
+        "notFound": "No Prod Stickers found"
+      },
+      "created": "A new Prod Sticker is created with identifier { param }",
+      "updated": "A Prod Sticker is updated with identifier { param }",
+      "deleted": "A Prod Sticker is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Prod Sticker { id }?"
+      },
+      "detail": {
+        "title": "Prod Sticker"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "prod": "Prod",
+      "sticker": "Sticker"
+    }
+  }
+}

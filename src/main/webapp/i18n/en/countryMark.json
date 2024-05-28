@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "countryMark": {
+      "home": {
+        "title": "Country Marks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Country Mark",
+        "createOrEditLabel": "Create or edit a Country Mark",
+        "notFound": "No Country Marks found"
+      },
+      "created": "A new Country Mark is created with identifier { param }",
+      "updated": "A Country Mark is updated with identifier { param }",
+      "deleted": "A Country Mark is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Country Mark { id }?"
+      },
+      "detail": {
+        "title": "Country Mark"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "country": "Country",
+      "mark": "Mark"
+    }
+  }
+}

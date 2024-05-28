@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "changelogDate": "20240528024656"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "relType",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "100"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "StickerMark",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "sticker",
+      "otherEntityRelationshipName": "stickerMark",
+      "relationshipName": "sticker",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "mark",
+      "otherEntityRelationshipName": "stickerMark",
+      "relationshipName": "mark",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

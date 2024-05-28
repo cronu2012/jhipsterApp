@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "cerfStd": {
+      "home": {
+        "title": "Cerf Stds",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cerf Std",
+        "createOrEditLabel": "Create or edit a Cerf Std",
+        "notFound": "No Cerf Stds found"
+      },
+      "created": "A new Cerf Std is created with identifier { param }",
+      "updated": "A Cerf Std is updated with identifier { param }",
+      "deleted": "A Cerf Std is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Cerf Std { id }?"
+      },
+      "detail": {
+        "title": "Cerf Std"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "cerf": "Cerf",
+      "std": "Std"
+    }
+  }
+}

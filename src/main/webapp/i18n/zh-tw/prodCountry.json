@@ -1,0 +1,26 @@
+{
+  "jhipsterApp": {
+    "prodCountry": {
+      "home": {
+        "title": "Prod Countries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "建立一筆新的 Prod Country",
+        "createOrEditLabel": "建立或編輯 Prod Country",
+        "notFound": "No Prod Countries found"
+      },
+      "created": "新的 Prod Country 建立成功，識別碼為 { param }",
+      "updated": "識別碼為 { param } 的 Prod Country 更新成功",
+      "deleted": "識別碼為 { param } 的 Prod Country 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Prod Country { id } 嗎?"
+      },
+      "detail": {
+        "title": "Prod Country"
+      },
+      "id": "ID",
+      "relType": "Rel Type",
+      "prod": "Prod",
+      "country": "Country"
+    }
+  }
+}
