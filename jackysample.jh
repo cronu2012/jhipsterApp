@@ -1,0 +1,170 @@
+/* 產品 */
+entity Prod {
+    prodNo String maxlength(30),
+    enName String maxlength(100),
+    chName String maxlength(100),
+    hsCode String maxlength(20),
+    cccCode String maxlength(20),
+}
+
+/* 國家 */
+entity Country {
+    countryNo String maxlength(10),
+    enName String maxlength(100),
+    chName String maxlength(100),
+}
+
+/* 證書 */
+entity Cerf {
+    cerfNo String maxlength(30),
+    cerfVer String maxlength(20),
+    status String maxlength(10),
+    pdf Blob,
+    issuDt LocalDate,
+    expDt LocalDate,
+}
+
+/* 檢驗標準 */
+entity Std {
+    stdNo String,
+    stdVer String,
+    enName String,
+    chName String,
+    status String maxlength(10),
+    issuDt LocalDate,
+    expDt LocalDate,
+}
+
+/* 標籤圖示 */
+entity Mark {
+    markNo String maxlength(20),
+    enName String maxlength(100),
+    chName String maxlength(100),
+    img ImageBlob,
+}
+
+/* 法人 */
+entity Company {
+    companyNo String maxlength(20),
+    enName String maxlength(100),
+    chName String maxlength(100),
+    tel String maxlength(20),
+    addr String maxlength(100),
+    email String maxlength(50),
+    peopleName String,
+}
+
+/* 費用 */
+entity FeeProdCerfCompany {
+    fee Long,
+    feeType String maxlength(10),
+    feeDt LocalDate,
+}
+
+/* 證書申請人、製造商、生產廠 */
+entity CerfCompany {
+    relType String maxlength(100),
+}
+
+/* 產品貼紙 */
+entity Sticker {
+    stickerNo String maxlength(20),
+    img ImageBlob,
+}
+
+entity ProdCountry {
+    relType String maxlength(100),
+}
+
+entity ProdStd {
+    relType String maxlength(100),
+}
+
+entity CerfProd {
+    relType String maxlength(100),
+}
+
+entity CerfStd {
+    relType String maxlength(100),
+}
+
+entity CountryStd {
+    relType String maxlength(100),
+}
+
+entity CerfMark {
+    relType String maxlength(100),
+}
+
+entity StickerMark {
+    relType String maxlength(100),
+}
+
+entity CountryCert {
+    relType String maxlength(100),
+}
+
+entity ProdSticker {
+    relType String maxlength(100),
+}
+
+entity CountryMark {
+    relType String maxlength(100),
+}
+
+@readOnly
+entity Wcc412View {
+    cerfId Long,
+    countryChName String,
+    cerfNo String,
+    cerfVer String,
+    cerfStatus String,
+    countryId Long,
+    prodNo String,
+    prodChName String,
+}
+
+@readOnly
+entity Wcc421View {
+    cerfId Long,
+    countryChName String,
+    cerfNo String,
+    cerfVer String,
+    cerfStatus String,
+    companyChName String,
+    relType String,
+}
+
+/* 一對多 */
+relationship OneToMany {
+    Prod{prodCountry} to ProdCountry{prod},
+    Country{prodCountry} to ProdCountry{country},
+    Prod{prodStd} to ProdStd{prod},
+    Std{prodStd} to ProdStd{std},
+    Cerf{cerfProd} to CerfProd{cerf},
+    Prod{cerfProd} to CerfProd{prod},
+    Cerf{cerfStd} to CerfStd{cerf},
+    Std{cerfStd} to CerfStd{std},
+    Country{countryStd} to CountryStd{country},
+    Std{countryStd} to CountryStd{std},
+    Cerf{cerfMark} to CerfMark{cerf},
+    Mark{cerfMark} to CerfMark{mark},
+    Sticker{stickerMark} to StickerMark{sticker},
+    Mark{stickerMark} to StickerMark{mark},
+    Cerf{cerfCompany} to CerfCompany{cerf},
+    Company{cerfCompany} to CerfCompany{company},
+    Prod{feeProdCerfCompany} to FeeProdCerfCompany{prod},
+    Cerf{feeProdCerfCompany} to FeeProdCerfCompany{cerf},
+    Company{feeProdCerfCompany} to FeeProdCerfCompany{company},
+    Country{countryCert} to CountryCert{country},
+    Cerf{countryCert} to CountryCert{cerf},
+    Prod{prodSticker} to ProdSticker{prod},
+    Sticker{prodSticker} to ProdSticker{sticker},
+    Country{countryMark} to CountryMark{country},
+    Mark{countryMark} to CountryMark{mark},
+}
+
+filter *
+dto * with mapstruct
+paginate * with pagination
+service * with serviceClass
