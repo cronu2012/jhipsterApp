@@ -1,0 +1,17 @@
+entity Product {
+    mainTitle String maxlength(255),
+    subTitle String maxlength(255),
+    description TextBlob,
+    price String maxlength(10),
+    createBy String maxlength(100),
+    createdTime Instant,
+    updatedTime Instant,
+    status Integer,
+}
+
+
+
+filter *
+dto * with mapstruct
+paginate * with pagination
+service * with serviceClass
